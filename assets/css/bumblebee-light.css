@@ -15,14 +15,26 @@
 9. Freelance
 10. Resume
 11. Testimony
-12. Blog
+12. work
 13. Contact
 14. Footer
 15. All Media Queries
 
 ------------------*/
 
-@import url("https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,700");
+/* @import url("https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,700"); */
+@font-face {
+    font-family: 'Butler UltraLight';
+    src: url('/assets/webfonts/Butler-UltraLight.eot'); /* IE9 Compat Modes */
+    src: url('/assets/webfonts/Butler-UltraLight.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('/assets/webfonts/Butler-UltraLight.woff2') format('woff2'), /* Super Modern Browsers */
+         url('/assets/webfonts/Butler-UltraLight.woff') format('woff'), /* Pretty Modern Browsers */
+         url('/assets/webfonts/Butler-UltraLight.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('/assets/webfonts/Butler-UltraLight.svg#ButlerUltraLight') format('svg'); /* Legacy iOS */
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 /* ---------------------------------------------- /*
 * 1. Reset.css
@@ -990,29 +1002,29 @@ strong {
 }
 
 /* ----------------------------------------------
-* 12. Blog
+* 12. work
 /* ---------------------------------------------- */
 
-.blog-list {
+.work-list {
   max-width: 350px;
 }
 
-.blog-list--img {
+.work-list--img {
   position: relative;
 }
 
-.blog-list--img img {
+.work-list--img img {
   height: 300px;
   object-fit: cover;
   width: 100%;
 }
 
-.blog-list--desc h3 {
+.work-list--desc h3 {
   font-size: 18px;
   font-weight: 500;
 }
 
-.blog-list--details {
+.work-list--details {
   position: absolute;
   left: 0;
   right: 0;
@@ -1031,18 +1043,18 @@ strong {
   transition: all 0.3s ease-in-out 0s;
 }
 
-.blog-list:hover .blog-list--details {
+.work-list:hover .work-list--details {
   opacity: 1;
   visibility: visible;
 }
 
-.blog-list:hover .blog-list--details-in {
+.work-list:hover .work-list--details-in {
   opacity: 1;
   visibility: visible;
   margin-top: 0px;
 }
 
-.blog-list--details-in {
+.work-list--details-in {
   opacity: 0;
   visibility: hidden;
   margin-top: 30px;

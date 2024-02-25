@@ -114,9 +114,9 @@
     }
   });
 
-  // Blog Init
+  // work Init
 
-  var swipert = new Swiper(".swiper-blog", {
+  var swipert = new Swiper(".swiper-work", {
     slidesPerView: "auto",
     spaceBetween: 30
   });

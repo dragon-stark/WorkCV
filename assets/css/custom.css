@@ -21,7 +21,7 @@
 
 ------------------*/
 
-/* @import url("https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,700");
+/* @import url("https://fonts.googleapis.com/css?family=Butler UltraLight:100,300,400,500,700");
 
 /* ---------------------------------------------- /*
 * 1. Reset.css
@@ -272,7 +272,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Poppins", sans-serif;
+ font-family: 'Butler UltraLight', sans-serif;
   letter-spacing: 2px;
   color: #333;
   font-weight: 300;
@@ -356,7 +356,7 @@ justify-content: space-around ;
   font-weight: 400;
   transition: all 0.5s;
   letter-spacing: 2px;
-  color: #fff;
+  /* color: #fff; */
   box-shadow: none;
   text-transform: uppercase;
   outline: none !important;

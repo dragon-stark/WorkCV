@@ -9779,13 +9779,13 @@ a.text-dark:hover {
 .fa-blind:before {
   content: "\f29d";
 }
-.fa-blog:before {
+.fa-work:before {
   content: "\f781";
 }
-.fa-blogger:before {
+.fa-workger:before {
   content: "\f37c";
 }
-.fa-blogger-b:before {
+.fa-workger-b:before {
   content: "\f37d";
 }
 .fa-bluetooth:before {
