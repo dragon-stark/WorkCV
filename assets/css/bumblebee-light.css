@@ -1005,16 +1005,16 @@ strong {
 * 12. work
 /* ---------------------------------------------- */
 
-.work-list {
+/* .work-list {
   max-width: 350px;
-}
+} */
 
 .work-list--img {
   position: relative;
 }
 
 .work-list--img img {
-  height: 300px;
+  height: 350px;
   object-fit: cover;
   width: 100%;
 }

@@ -1002,7 +1002,7 @@ strong {
 /* ---------------------------------------------- */
 
 .work-list {
-  max-width: 350px;
+  max-width: 100%;
 }
 
 .work-list--img {
@@ -1010,7 +1010,7 @@ strong {
 }
 
 .work-list--img img {
-  height: 300px;
+  height: 350px;
   object-fit: cover;
   width: 100%;
 }

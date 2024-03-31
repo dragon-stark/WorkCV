@@ -14039,8 +14039,8 @@ img.mfp-img {
     padding: 0;
   }
   .mfp-img-mobile .mfp-counter {
-    right: 5px;
-    top: 3px;
+    /* right: 5px;
+    top: 3px; */
   }
   .mfp-img-mobile .mfp-close {
     top: 0;
