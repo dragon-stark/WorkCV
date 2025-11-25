@@ -1222,3 +1222,24 @@ strong {
     width: 30px;
   }
 }
+.tech-skills-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem; /* ← updated spacing */
+  text-align: center;
+  margin-top: 1rem;
+}
+.tech-skills-wrapper img {
+  height: 46px;
+  width: auto;
+  filter: grayscale(100%);
+  opacity: 0.9;
+  transition: filter 0.3s ease, opacity 0.3s ease; /* unified */
+}
+
+.tech-skills-wrapper img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
