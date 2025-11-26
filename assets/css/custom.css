@@ -916,7 +916,9 @@ justify-content: space-around ;
   overflow: hidden;
   display: block;
   height: 500px;
-  object-fit: cover;
+object-fit: contain !important;
+background-color: #fff; /* optional */
+
   width: 100%;
 }
 
@@ -1103,88 +1105,108 @@ justify-content: space-around ;
 /* ----------------------------------------------
 /*  */
 
-.container .portfolio-page{
-  justify-content: space-between;
-}
-.outer-container{
-   justify-content: space-around;
+/* =========================================
+   FINAL WORKING UNIFORM PORTFOLIO CARDS
+   ========================================= */
 
-}
-.col-12 .col-md-6 .col-lg-4 {
-  justify-items: space-around;
-  justify-content: space-between;
-  margin: 25px;
-}
-.card .h-100 {
-  justify-self: space-around;
-  margin: 25%;
-  justify-self: flex-start;
- padding: 25px;
-
-}
-.portfolio-list {
-  max-width: 350px;
-  /* justify-self: flex-start; */
-  justify-items: space-around;
+/* Bootstrap column spacing */
+.col-12.col-md-6.col-lg-4 {
+  padding: 1rem;
 }
 
-.portfolio-list--img {
-   margin-top: 25px;
-  position: absolute;
+/* Outer card wrapper */
+.portfolio-content {
+  height: 380px;                 /* UNIFORM TOTAL CARD HEIGHT */
+  background: #111;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
-.list--img img {
+/* The card element */
+.card.h-100.list--img {
+  display: flex;
+  flex-direction: column;
   height: 100%;
-  object-fit: cover;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Image container */
+.work-list {
+  flex: 0 0 180px;               /* UNIFORM IMAGE HEIGHT */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Actual image */
+.work-list img.card-img-size {
   width: 100%;
-  opacity: 60%;
-}
-
-.portfolio-list--desc h3 {
-  font-size: 18px;
-  font-weight: 500;
-}
-
-.portfolio-list--details {
-  /* position: absolute; */
-  left: 0;
-  right: 0;
-  top: 0;
-  right: 0;
   height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.5);
+ object-fit: contain !important;
+background-color: #fff; /* optional */
+
+  opacity: 0.85;
+  display: block;
+}
+
+/* Text section */
+.work-list--desc {
+  flex: 1;                       /* Fill remaining space */
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   text-align: center;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  -moz-transition: all 0.3s ease-in-out 0s;
-  -ms-transition: all 0.3s ease-in-out 0s;
-  -o-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
 }
 
-.portfolio-list:hover .portfolio-list--details {
+/* Title */
+.work-list--desc h3 {
+  color: #fff;
+  font-size: 1rem;
+  margin: 0;
+  min-height: 2.4em;             /* Prevent uneven heights */
+}
+
+/* Subtitle text */
+.work-list--desc p {
+  color: #ddd;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Hover overlay */
+.work-list--details {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.75);
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+}
+
+.work-list--details-in {
+  opacity: 0;
+  margin-top: 20px;
+  transition: 0.3s ease;
+}
+
+/* Hover effect */
+.work-list:hover .work-list--details {
   opacity: 1;
   visibility: visible;
 }
 
-.portfolio-list:hover .portfolio-list--details-in {
+.work-list:hover .work-list--details-in {
   opacity: 1;
-  visibility: visible;
-  margin-top: 0px;
+  margin-top: 0;
 }
 
-.portfolio-list--details-in {
-  opacity: 0;
-  visibility: hidden;
-  margin-top: 30px;
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  -moz-transition: all 0.3s ease-in-out 0s;
-  -ms-transition: all 0.3s ease-in-out 0s;
-  -o-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
-}
 
 /* ----------------------------------------------
 * 13. Contact
@@ -1342,4 +1364,97 @@ margin: 40px 0 20px !important;
 
   .home-pagination .swiper-pagination-bullet {
     width: 30px;
-   }}}
+   }
+   /* Uniform portfolio project cards */
+.portfolio .item {
+  display: flex;
+  flex-direction: column;
+  height: 380px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.portfolio .item img {
+  height: 180px;
+object-fit: contain !important;
+background-color: #fff;
+  width: 100%;
+}
+
+.portfolio .item .content {
+  padding: 1rem;
+  flex-grow: 1;
+}
+
+.portfolio .item h6,
+.portfolio .item h5 {
+  min-height: 2.5rem;
+}
+}}
+
+.section-work .work-list {
+  height: 180px !important;
+  min-height: 180px !important;
+  max-height: 180px !important;
+  overflow: hidden !important;
+  position: relative !important;
+}
+
+.section-work .work-list img.card-img-size {
+  height: 100% !important;
+  width: 100% !important;
+object-fit: contain !important;
+background-color: #fff;
+  display: block !important;
+}
+.section-work .portfolio-content {
+  height: 380px !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.section-work .work-list--desc {
+  flex: 1 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+  text-align: center;
+}
+.section-work .work-list {
+  height: 200px !important;
+  min-height: 200px !important;
+  max-height: 200px !important;
+}
+
+.section-work .portfolio-content {
+  height: auto !important;
+}
+/* =======================================
+   MOBILE FIXES — CLEAN RESPONSIVE CARDS
+   ======================================= */
+@media (max-width: 768px) {
+
+  .section-work .work-list {
+    height: 140px !important;
+    min-height: 140px !important;
+    max-height: 140px !important;
+  }
+
+  .section-work .portfolio-content {
+    height: auto !important;
+  }
+
+    .section-work .work-list--desc h3 {
+    font-size: 0.95rem !important;
+    line-height: 1.3rem !important;
+  }
+
+  .col-12.col-md-6.col-lg-4 {
+    padding: 0.5rem !important;
+    margin-bottom: 20px !important;
+  }
+
+  .portfolio-content {
+    box-shadow: 0 2px 6px rgba(0,0,0,0.18) !important;
+  }
+}
