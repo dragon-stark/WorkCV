@@ -339,8 +339,8 @@ strong {
 .section .container {
   padding: 0 30px;
 justify-content: space-around ;
-  /* flex-wrap: row; */
-}
+   flex-wrap: row;
+   }
 
 .text-custom {
   color: #30b6e4 !important;
@@ -431,7 +431,7 @@ justify-content: space-around ;
 }
 
 
-/*
+
 .hover-state:hover {
   transform: translateY(-5px);
   box-shadow: 0px 4px 8px rgba(134, 151, 168, 0.1);
@@ -495,7 +495,7 @@ justify-content: space-around ;
     right top,
     color-stop(0%, #ecdbdd),
     color-stop(100%, #e39f94)
-  );
+  );/*
   background: -webkit-linear-gradient(45deg, #ecdbdd 0%, #e39f94 100%);
   background: -o-linear-gradient(45deg, #ecdbdd 0%, #e39f94 100%);
   background: -ms-linear-gradient(45deg, #ecdbdd 0%, #e39f94 100%);
@@ -507,7 +507,7 @@ justify-content: space-around ;
 * 4. Preloader
 /* ---------------------------------------------- */
 
-/* .preloader {
+ .preloader {
   position: fixed;
   left: 0;
   right: 0;
@@ -536,7 +536,7 @@ justify-content: space-around ;
 * 5. Header
 /* ---------------------------------------------- */
 
-/* .ham {
+ .ham {
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
   transition: transform 400ms;
@@ -710,7 +710,7 @@ justify-content: space-around ;
 /* ----------------------------------------------
 * 6. Home
 /* ---------------------------------------------- */
-/*
+
 .section-home {
   height: 100vh;
   position: relative;
@@ -764,7 +764,6 @@ justify-content: space-around ;
   position: absolute;
   left: 0;
   right: 0;
-  position: absolute;
   height: 100%;
   padding-top: 0 !important;
 }
@@ -827,8 +826,8 @@ justify-content: space-around ;
 
 /* ----------------------------------------------
 * 6. About
-/* ---------------------------------------------- */
-/* /* */
+ ---------------------------------------------- */
+
 /* .about-avatar img {
   height: 160px;
   width: 160px;
@@ -1074,9 +1073,9 @@ justify-content: space-around ;
 
 /* ----------------------------------------------
 * 11. Testimony
-/* ---------------------------------------------- */
+ ---------------------------------------------- */
 
-/* .single-testimonials {
+.single-testimonials {
   width: 100%;
 }
 
@@ -1097,7 +1096,7 @@ justify-content: space-around ;
 
 .swiper-container {
   padding-top: 20px;
-} ,
+}
 
 /* ----------------------------------------------
 * 12. Blog
@@ -1237,7 +1236,7 @@ justify-content: space-around ;
 * 15. All Media Queries
 /* ---------------------------------------------- */
 
-/* @media (max-width: 991px) {
+ @media (max-width: 991px) {
   .container {
     flex-direction: row;
     max-width: 100%;
@@ -1286,11 +1285,11 @@ justify-content: space-around ;
 
   .contact-details {
     padding-top: 30px;
-  } */
+  }
 
-  /* .section-resume .section-subHead { */
-/*padding-top: 30px;*/
-/* margin: 40px 0 20px !important;
+   .section-resume .section-subHead {
+    padding-top: 30px;
+margin: 40px 0 20px !important;
   }
 
   .filter a {
@@ -1343,4 +1342,4 @@ justify-content: space-around ;
 
   .home-pagination .swiper-pagination-bullet {
     width: 30px;
-   } */
+   }}}
